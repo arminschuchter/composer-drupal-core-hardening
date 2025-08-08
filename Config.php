@@ -109,6 +109,7 @@ class Config {
       'profiles/nightwatch_a11y_testing',
       'profiles/nightwatch_testing',
       'profiles/standard/tests',
+      'profiles/test_language_negotiation',
       'profiles/testing',
       'profiles/testing_config_import',
       'profiles/testing_config_overrides',
