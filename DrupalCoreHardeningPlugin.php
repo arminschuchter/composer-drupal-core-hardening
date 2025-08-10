@@ -169,10 +169,10 @@ class DrupalCoreHardeningPlugin implements PluginInterface, EventSubscriberInter
     $packages_to_be_cleaned = array_intersect_key($cleanup_paths, $installed_packages);
 
     if (!$packages_to_be_cleaned) {
-      $this->io->writeError('<info>Packages already clean.</info>');
+      $this->io->writeError('<info>Packages already clean. (drupal core)</info>');
       return;
     }
-    $this->io->writeError('<info>Cleaning installed packages.</info>');
+    $this->io->writeError('<info>Cleaning installed packages. (drupal core)</info>');
 
     foreach ($packages_to_be_cleaned as $package_name => $paths) {
       $this->cleanPathsForPackage($installed_packages[$package_name], $all_cleanup_paths[$package_name]);
